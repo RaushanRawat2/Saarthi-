@@ -8,7 +8,10 @@ const participationRoutes = require("./routes/participationRoutes");
 const authRoutes = require("./routes/authRoutes");
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin:https://saarthi-sikkim-11.netlify.app/,
+  credentials:true
+}));
 app.use(express.json());
 
 // Routes
