@@ -9,7 +9,7 @@ const authRoutes = require("./routes/authRoutes");
 
 const app = express();
 app.use(cors({
-  origin:https://saarthi-sikkim-11.netlify.app/,
+  origin:https:"https://saarthi-sikkim-11.netlify.app/",
   credentials:true
 }));
 app.use(express.json());
